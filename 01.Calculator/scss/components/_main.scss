@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url("/01.Calculator/scss/components/wp10407592-world-of-warcraft-4k-wallpapers.jpg");
     background-repeat: no-repeat;
@@ -5,6 +9,7 @@ body {
     background-position: center;
     background-size: 100vw 100vh;
     display: flex;
+    overflow: hidden;
 
 
 
