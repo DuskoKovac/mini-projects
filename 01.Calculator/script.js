@@ -1,12 +1,12 @@
-var numberButtonsEl = document.querySelectorAll(".numberButton");//
-var currentResultScreenEl = document.getElementById("current-result");//
-var currentNumberScreenEl = document.getElementById("current-number");//
-var clearButtonEl = document.getElementById("clear");
-var deleteButtonEl = document.getElementById("delete");
-var equalsButtonEl = document.getElementById("equals");//
-var operationButtonsEl = document.querySelectorAll(".operation");
+const numberButtonsEl = document.querySelectorAll(".numberButton");//
+const currentResultScreenEl = document.getElementById("current-result");//
+const currentNumberScreenEl = document.getElementById("current-number");//
+const clearButtonEl = document.getElementById("clear");
+const deleteButtonEl = document.getElementById("delete");
+const equalsButtonEl = document.getElementById("equals");//
+const operationButtonsEl = document.querySelectorAll(".operation");
 
-var resultEl = document.getElementById("result");
+const resultEl = document.getElementById("result");
 
 
 // dobavljanje svih elemenata   OK
@@ -34,16 +34,16 @@ var resultEl = document.getElementById("result");
 
 
 
-var lastNumber = "";
-var number = "";
-var result = "";
-var operation = "";
-var lastOperation = "";
-var haveDecimal = false;
-var maxLength = 27;
+let lastNumber = "";
+let number = "";
+let result = "";
+let operation = "";
+let lastOperation = "";
+let haveDecimal = false;
+let maxLength = 27;
 
 
-for (var i = 0; i < numberButtonsEl.length; i++) {
+for (let i = 0; i < numberButtonsEl.length; i++) {
 
     numberButtonsEl[i].addEventListener("click", function (event) {
         if (number.length > maxLength) {
@@ -61,7 +61,7 @@ for (var i = 0; i < numberButtonsEl.length; i++) {
     })
 }
 
-for (var i = 0; i < operationButtonsEl.length; i++) {
+for (let i = 0; i < operationButtonsEl.length; i++) {
     operationButtonsEl[i].addEventListener("click", function (event) {
         operation = event.target.innerText;
         if (!number) {
